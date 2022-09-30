@@ -16,4 +16,5 @@ int main()
 
     module_mfci_create(&mfci_1);
     printf("working\n");
+    while(1);
 }

@@ -4,19 +4,10 @@ project(mfci-test LANGUAGES C CXX)
 
 add_executable(test test.c)
 
-target_link_libraries(test PRIVATE bgsn70)
-target_link_libraries(test PRIVATE buttons64)
-target_link_libraries(test PRIVATE graph64)
-target_link_libraries(test PRIVATE math64)
-target_link_libraries(test PRIVATE md64)
-target_link_libraries(test PRIVATE mfi70)
-target_link_libraries(test PRIVATE mo64)
-target_link_libraries(test PRIVATE nav64)
-target_link_libraries(test PRIVATE pack64)
-target_link_libraries(test PRIVATE shm64)
-target_link_libraries(test PRIVATE str64)
-target_link_libraries(test PRIVATE sys64)
-target_link_libraries(test PRIVATE udp64)
+include(GNUInstallDirs)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
 # ////////////////////////////////////////////////bgsn70
 add_library(bgsn70 SHARED IMPORTED)
@@ -123,7 +114,7 @@ set_target_properties(sys64
   PROPERTIES
   IMPORTED_LOCATION
   ${CMAKE_CURRENT_SOURCE_DIR}/electroautomatic/mfci-bgs/x64/libsys64.so
-  INTERFACE_INCLUDE_DIRECTORIES
+  INCLUDE_DIRECTORIES
   ${CMAKE_CURRENT_SOURCE_DIR}/electroautomatic/mfci-bgs/include
   )
 # ////////////////////////////////////////////////udp64
@@ -135,3 +126,16 @@ set_target_properties(udp64
   INTERFACE_INCLUDE_DIRECTORIES
   ${CMAKE_CURRENT_SOURCE_DIR}/electroautomatic/mfci-bgs/include
   )
+
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" sys64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" bgsn70)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" graph64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" math64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" md64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" mfi70)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" mo64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" nav64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" pack64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" shm64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" str64)
+target_link_libraries(test PRIVATE "-Wl,--disable-new-dtags" udp64)
