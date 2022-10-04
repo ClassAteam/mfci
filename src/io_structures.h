@@ -2,6 +2,28 @@
 #define IO_STRUCTURES_H_
 
 #include "mfci_io_70.h"
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <semaphore.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#define errExit(msg)    do { perror(msg); exit(EXIT_FAILURE);   \
+    } while (0)
+
+#define BUF_SIZE 1024   /* Maximum size for exchanged string */
+
+/* Define a structure that will be imposed on the shared
+   memory object */
+
+struct shmbuf {
+    sem_t  sem1;            /* POSIX unnamed semaphore */
+    sem_t  sem2;            /* POSIX unnamed semaphore */
+    size_t cnt;             /* Number of bytes used in 'buf' */
+    char   buf[BUF_SIZE];   /* Data being transferred */
+};
 
 typedef struct shm_in_data
 {
@@ -22,11 +44,11 @@ typedef struct shm_out_data
     mfci_out_sa1_b_t data8;
 } shm_out_data;
 
-typedef struct shm_in_buttons_data
+typedef struct shm_buttons_data
 {
     uint32_t counter;
     uint32_t button_id;
-} shm_in_buttons_data;
+} shm_buttons_data;
 
 
 #endif // IO_STRUCTURES_H_

@@ -1,0 +1,1 @@
+add_executable(passing_struc_to_p passing_struc_to_p.c)

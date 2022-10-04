@@ -1,51 +1,32 @@
-#include "io_structures"
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <errno.h>
-#include <string.h>
-#include <sys/mman.h>
+#include "module_mfci.h"
+#include "io_structures.h"
+#include "shm_proto.h"
 
-#define SH_SIZE 16
+int main()
+{
+    const char fonts[] = "home/ivan/repo/mfci_test/electroautomatic/mfci-bgs/x64/fonts_mfi.hex";
 
-int main(int argc, char** argv) {
-  int shm_fd = shm_open("/shm0", O_CREAT | O_RDWR, 0600);
-  if (shm_fd < 0) {
-    fprintf(stderr, "ERROR: Failed to create shared memory: %s\n",
-        strerror(errno));
-    return 1;
-  }
-  fprintf(stdout, "Shared memory is created with fd: %d\n",
-          shm_fd);
-  if (ftruncate(shm_fd, SH_SIZE * sizeof(char)) < 0) {
-    fprintf(stderr, "ERROR: Truncation failed: %s\n",
-            strerror(errno));
-    return 1;
-  }
-  fprintf(stdout, "The memory region is truncated.\n");
-  void* map = mmap(0, SH_SIZE, PROT_WRITE, MAP_SHARED, shm_fd, 0);
-  if (map == MAP_FAILED) {
-    fprintf(stderr, "ERROR: Mapping failed: %s\n",
-            strerror(errno));
-    return 1;
-  }
-  char* ptr = (char*)map;
-  ptr[0] = 'A';
-  ptr[1] = 'B';
-  ptr[2] = 'C';
-  ptr[3] = '\n';
-  ptr[4] = '\0';
-  while(1);
-  fprintf(stdout, "Data is written to the shared memory.\n");
-  if (munmap(ptr, SH_SIZE) < 0) {
-    fprintf(stderr, "ERROR: Unmapping failed: %s\n",
-            strerror(errno));
-    return 1;
-  }
-  if (close(shm_fd) < 0) {
-    fprintf(stderr, "ERROR: Closing shared memory failed: %s\n",
-        strerror(errno));
-    return 1;
-  }
-  return 0;
+    shm_in_data_t shm_in_t;
+    shm_in_data_ctor(&shm_in_t, "mfci_shm_input");
+
+    shm_out_data_t shm_out_t;
+    shm_out_data_ctor(&shm_out_t, "mfci_shm_output");
+
+    shm_buttons_data_t shm_buttons_t;
+    shm_buttons_data_ctor(&shm_buttons_t, "mfci_shm_buttons");
+
+    module_mfci_init_data_t mfci1;
+
+    printf("alo %s", shm_in_t.shm_name);
+
+    mfci1.mode = MODULE_MFCI_MODE_ESVO;
+    mfci1.number = 1;
+    mfci1.font_filename = fonts;
+    mfci1.shm_in_data_id = shm_in_t.shm_name;
+    mfci1.shm_out_data_id = shm_out_t.shm_name;
+    mfci1.shm_in_buttons_id = shm_buttons_t.shm_name;
+
+    module_mfci_create(&mfci1);
+    printf("working\n");
+    while(1);
 }
