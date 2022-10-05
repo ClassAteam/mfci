@@ -25,8 +25,15 @@ int main()
     mfci1.shm_in_data_id = shm_in_t.shm_name;
     mfci1.shm_out_data_id = shm_out_t.shm_name;
     mfci1.shm_in_buttons_id = shm_buttons_t.shm_name;
-
     module_mfci_create(&mfci1);
-    printf("working\n");
-    while(1);
+
+    while(1)
+    {
+      sleep(1);
+
+      int result = module_mfci_update();
+
+      if (result != 0)
+        printf("module_mfci_update failure\n");
+    }
 }
