@@ -19,27 +19,35 @@ struct shmbuf {
 };
 
 typedef struct shm_in_data_t{
-    int fd;
+    int* fd;
     const char* shm_name;
     shm_in_data* data;
 } shm_in_data_t;
 
-void shm_in_data_ctor(shm_in_data_t* sh_data_t, char* shm_name);
+shm_in_data_t* shm_in_data_new();
+
+void shm_in_data_ctor(shm_in_data_t* in_data_t, char* shm_name);
 
 typedef struct shm_out_data_t{
-    int fd;
+    int* fd;
     const char* shm_name;
     shm_out_data* data;
 } shm_out_data_t;
 
-void shm_out_data_ctor(shm_out_data_t* sh_data_t, char* shm_name);
+shm_out_data_t* shm_out_data_new();
+
+void shm_out_data_ctor(shm_out_data_t* out_data_t, char* shm_name);
 
 typedef struct shm_buttons_data_t{
-    int fd;
+    int* fd;
     const char* shm_name;
     shm_buttons_data* data;
 } shm_buttons_data_t;
 
-void shm_buttons_data_ctor(shm_buttons_data_t* sh_data_t, char* shm_name);
+shm_buttons_data_t* shm_buttons_data_new();
+
+void shm_buttons_data_ctor(shm_buttons_data_t* buttons_data_t, char* shm_name);
+
+
 
 #endif // SHM_PROTO_H_

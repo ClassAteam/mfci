@@ -1,71 +1,82 @@
 #include "shm_proto.h"
 
-void shm_in_data_ctor(shm_in_data_t* sh_data_t, char* shm_name)
-{
-    shm_unlink(shm_name);
-    sh_data_t->shm_name = shm_name;
+shm_in_data_t* shm_in_data_new() {
+  return (shm_in_data_t*)malloc(sizeof(shm_in_data_t));
+}
 
-    sh_data_t->fd = shm_open(sh_data_t->shm_name, O_CREAT | O_EXCL | O_RDWR,
+void shm_in_data_ctor(shm_in_data_t* in_data_t, char* shm_name) {
+  shm_unlink(shm_name);
+  in_data_t->shm_name = shm_name;
+  in_data_t->fd = (int*)malloc(sizeof(int));
+  *in_data_t->fd = shm_open(in_data_t->shm_name, O_CREAT | O_EXCL | O_RDWR,
                          S_IRUSR | S_IWUSR);
-    if (sh_data_t->fd == -1)
+
+    if (*in_data_t->fd == -1)
       errExit("shm_open_in");
 
-    if (ftruncate(sh_data_t->fd, sizeof(shm_in_data)) == -1)
+    if (ftruncate(*in_data_t->fd, sizeof(shm_in_data)) == -1)
       errExit("ftruncate_in");
 
-    sh_data_t->data = (shm_in_data*)malloc(sizeof(shm_in_data));
+    in_data_t->data = (shm_in_data*)malloc(sizeof(shm_in_data));
 
-    sh_data_t->data = mmap(NULL, sizeof(shm_in_data),
+    in_data_t->data = mmap(NULL, sizeof(shm_in_data),
                    PROT_READ | PROT_WRITE,
-                   MAP_SHARED, sh_data_t->fd, 0);
-    if (sh_data_t->data == MAP_FAILED)
+                   MAP_SHARED, *in_data_t->fd, 0);
+    if (in_data_t->data == MAP_FAILED)
       errExit("mmap");
     exit;
 }
 
-void shm_out_data_ctor(shm_out_data_t* sh_data_t, char* shm_name)
-{
-    shm_unlink(shm_name);
-    sh_data_t->shm_name = shm_name;
+shm_out_data_t* shm_out_data_new() {
+  return (shm_out_data_t*)malloc(sizeof(shm_out_data_t));
+}
 
-    sh_data_t->fd = shm_open(sh_data_t->shm_name, O_CREAT | O_EXCL | O_RDWR,
+void shm_out_data_ctor(shm_out_data_t* out_data_t, char* shm_name) {
+  shm_unlink(shm_name);
+  out_data_t->shm_name = shm_name;
+  out_data_t->fd = (int*)malloc(sizeof(int));
+  *out_data_t->fd = shm_open(out_data_t->shm_name, O_CREAT | O_EXCL | O_RDWR,
                          S_IRUSR | S_IWUSR);
-    if (sh_data_t->fd == -1)
-      errExit("shm_open_out");
 
-    if (ftruncate(sh_data_t->fd, sizeof(shm_out_data)) == -1)
-      errExit("ftruncate_out");
+    if (*out_data_t->fd == -1)
+      errExit("shm_open_in");
 
-    sh_data_t->data = (shm_out_data*)malloc(sizeof(shm_out_data));
+    if (ftruncate(*out_data_t->fd, sizeof(shm_out_data)) == -1)
+      errExit("ftruncate_in");
 
-    sh_data_t->data = mmap(NULL, sizeof(shm_out_data),
+    out_data_t->data = (shm_out_data*)malloc(sizeof(shm_out_data));
+
+    out_data_t->data = mmap(NULL, sizeof(shm_out_data),
                    PROT_READ | PROT_WRITE,
-                   MAP_SHARED, sh_data_t->fd, 0);
-    if (sh_data_t->data == MAP_FAILED)
+                   MAP_SHARED, *out_data_t->fd, 0);
+    if (out_data_t->data == MAP_FAILED)
       errExit("mmap");
     exit;
 }
 
-void shm_buttons_data_ctor(shm_buttons_data_t* sh_data_t, char* shm_name)
-{
-    shm_unlink(shm_name);
-    sh_data_t->shm_name = shm_name;
+shm_buttons_data_t* shm_buttons_data_new() {
+  return (shm_buttons_data_t*)malloc(sizeof(shm_buttons_data_t));
+}
 
-    sh_data_t->fd = shm_open(sh_data_t->shm_name, O_CREAT | O_EXCL | O_RDWR,
+void shm_buttons_data_ctor(shm_buttons_data_t* buttons_data_t, char* shm_name) {
+  shm_unlink(shm_name);
+  buttons_data_t->shm_name = shm_name;
+  buttons_data_t->fd = (int*)malloc(sizeof(int));
+  *buttons_data_t->fd = shm_open(buttons_data_t->shm_name, O_CREAT | O_EXCL | O_RDWR,
                          S_IRUSR | S_IWUSR);
-    if (sh_data_t->fd == -1)
-      errExit("shm_open_buttons");
 
-    if (ftruncate(sh_data_t->fd, sizeof(shm_buttons_data)) == -1)
-      errExit("ftruncate_buttons");
+    if (*buttons_data_t->fd == -1)
+      errExit("shm_open_in");
 
-    sh_data_t->data = (shm_buttons_data*)malloc(sizeof(shm_buttons_data));
+    if (ftruncate(*buttons_data_t->fd, sizeof(shm_buttons_data)) == -1)
+      errExit("ftruncate_in");
 
-    sh_data_t->data = mmap(NULL, sizeof(shm_buttons_data),
+    buttons_data_t->data = (shm_buttons_data*)malloc(sizeof(shm_buttons_data));
+
+    buttons_data_t->data = mmap(NULL, sizeof(shm_buttons_data),
                    PROT_READ | PROT_WRITE,
-                   MAP_SHARED, sh_data_t->fd, 0);
-    if (sh_data_t->data == MAP_FAILED)
+                   MAP_SHARED, *buttons_data_t->fd, 0);
+    if (buttons_data_t->data == MAP_FAILED)
       errExit("mmap");
     exit;
 }
-
