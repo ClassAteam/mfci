@@ -4,7 +4,8 @@
 
 int main()
 {
-    const char fonts[] = "home/ivan/repo/mfci_test/electroautomatic/mfci-bgs/x64/fonts_mfi.hex";
+    const char fonts[] = "/home/ivan/repo/mfci_test/"
+        "external/electroautomatic/mfci-bgs/x64/fonts_mfi.hex";
 
     shm_in_data_t shm_in_t;
     shm_in_data_ctor(&shm_in_t, "mfci_shm_input");
@@ -16,8 +17,6 @@ int main()
     shm_buttons_data_ctor(&shm_buttons_t, "mfci_shm_buttons");
 
     module_mfci_init_data_t mfci1;
-
-    printf("alo %s", shm_in_t.shm_name);
 
     mfci1.mode = MODULE_MFCI_MODE_ESVO;
     mfci1.number = 1;
@@ -31,6 +30,7 @@ int main()
     {
       sleep(1);
 
+      /* printf("font file path is:%s", fonts); */
       int result = module_mfci_update();
 
       if (result != 0)
