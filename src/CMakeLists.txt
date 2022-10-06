@@ -6,6 +6,8 @@ target_sources(test3
   io_structures.h
   shm_proto.c
   shm_proto.h
+  esvo_in_data_init.c
+  esvo_in_data_init.h
   )
 
 target_compile_definitions(test3 PUBLIC SOI70 __UNIX)

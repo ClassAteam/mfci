@@ -18,35 +18,36 @@ struct shmbuf {
     char   buf[BUF_SIZE];   /* Data being transferred */
 };
 
-typedef struct shm_in_data_t{
+typedef struct shm_in_holder_t {
     int* fd;
     const char* shm_name;
-    shm_in_data* data;
-} shm_in_data_t;
+    esvo_in_data_t* data;
+} shm_in_holder_t;
 
-shm_in_data_t* shm_in_data_new();
+shm_in_holder_t* shm_in_holder_new();
 
-void shm_in_data_ctor(shm_in_data_t* in_data_t, char* shm_name);
+void shm_in_holder_ctor(shm_in_holder_t* in_data_t, char* shm_name);
 
-typedef struct shm_out_data_t{
+typedef struct shm_out_holder_t {
     int* fd;
     const char* shm_name;
-    shm_out_data* data;
-} shm_out_data_t;
+    esvo_out_data_t* data;
+} shm_out_holder_t;
 
-shm_out_data_t* shm_out_data_new();
+shm_out_holder_t* shm_out_holder_new();
 
-void shm_out_data_ctor(shm_out_data_t* out_data_t, char* shm_name);
+void shm_out_holder_ctor(shm_out_holder_t* out_data_t, char* shm_name);
 
-typedef struct shm_buttons_data_t{
+typedef struct shm_buttons_holder_t {
     int* fd;
     const char* shm_name;
-    shm_buttons_data* data;
-} shm_buttons_data_t;
+    esvo_buttons_data_t* data;
+} shm_buttons_holder_t;
 
-shm_buttons_data_t* shm_buttons_data_new();
+shm_buttons_holder_t* shm_buttons_holder_new();
 
-void shm_buttons_data_ctor(shm_buttons_data_t* buttons_data_t, char* shm_name);
+void shm_buttons_holder_ctor(shm_buttons_holder_t* buttons_data_t, char* shm_name);
+
 
 
 

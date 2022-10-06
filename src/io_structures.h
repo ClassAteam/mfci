@@ -10,13 +10,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-typedef struct shm_in_data
-{
+typedef struct esvo_in_data_t {
     uint32_t counter;
-    mfci_in_b_t input_struct;
-} shm_in_data;
+    mfci_in_b_t mfci_in_b;
+} esvo_in_data_t;
 
-typedef struct shm_out_data
+typedef struct esvo_out_data_t
 {
     uint32_t counter;
     mfci_out_sa1_b_t data1;
@@ -27,13 +26,13 @@ typedef struct shm_out_data
     mfci_out_sa1_b_t data6;
     mfci_out_sa1_b_t data7;
     mfci_out_sa1_b_t data8;
-} shm_out_data;
+} esvo_out_data_t;
 
-typedef struct shm_buttons_data
+typedef struct esvo_buttons_data_t
 {
     uint32_t counter;
     uint32_t button_id;
-} shm_buttons_data;
+} esvo_buttons_data_t;
 
 
 #endif // IO_STRUCTURES_H_
