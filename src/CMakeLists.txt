@@ -11,6 +11,7 @@ target_sources(test3
   )
 
 target_compile_definitions(test3 PUBLIC SOI70 __UNIX)
+# set_property(TARGET test3 PROPERTY C_STANDARD 11)
 
 target_link_libraries(test3 PRIVATE "-Wl,--disable-new-dtags" sys64)
 target_link_libraries(test3 PRIVATE "-Wl,--disable-new-dtags" bgsn70)
