@@ -152,7 +152,7 @@ typedef enum isoi70m_mfpu_button_t {
    ISOI70M_MFPU_BUTTON_BKS =  84,             //!< Режимная кнопка "ИНФ БКС"
    ISOI70M_MFPU_BUTTON_ENG =  85,             //!< Режимная кнопка "ENG"
    ISOI70M_MFPU_BUTTON_MODE_ROW4_1 =  97,     //!< Режимная кнопка 1 четвертого ряда
-   ISOI70M_MFPU_BUTTON_MODE_ROW4_2 =  98      //!< Режимная кнопка 2 четвертого ряда
+   ISOI70M_MFPU_BUTTON_MODE_ROW4_2 =  98,      //!< Режимная кнопка 2 четвертого ряда
    ISOI70M_MFPU_BUTTON_DIGITS =  99,          //!< Режимная кнопка "ЦИФР"
 } isoi70m_mfpu_button_t;
 

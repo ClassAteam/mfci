@@ -32,14 +32,17 @@ int main()
     mfci1.shm_in_buttons_id = buttons_holder1->shm_name;
     module_mfci_create(&mfci1);
 
+    int result = module_mfci_update();
+
     while(1)
     {
       /* sleep(1); */
 
       /* printf("font file path is:%s", fonts); */
-      int result = module_mfci_update();
 
       if (result != 0)
         printf("module_mfci_update failure\n");
+      if(sleep(3))
+          push_button_1(buttons_holder1);
     }
 }

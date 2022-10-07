@@ -14,3 +14,7 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
 }
 
 /* ptr->mfci_in_b.blocks_crc_b[CRC_SA_COUNT] = 0; */
+
+void push_button_1(shm_buttons_holder_t* ptr) {
+    ptr->data->button_id = ISOI70M_MFCI_BUTTON_LEFT_1;
+}
