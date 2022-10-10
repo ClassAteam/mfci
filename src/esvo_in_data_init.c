@@ -3009,7 +3009,6 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
         bis_b.
         sa_18_b.
         rap_send_side_status = 0;
-
     //5
     ////////////////////////////////////esvo_in_data_t
     ////////////////////////////////////mfci_in_b_t
@@ -3017,8 +3016,1103 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
     ////////////////////////////////////mfci_in_6hz_bis_b_t
     ////////////////////////////////////mfci_in_sa_19_b_t
     ////////////////////////////////////sa_19_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen1_1 = 0;
 
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen1_2 = 0;
 
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen1_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen2_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen2_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen2_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen3_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen3_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen3_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen4_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen4_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_voltage_gen4_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_current_rap_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_current_rap_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_current_rap_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_current_vsu_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_current_vsu_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_current_vsu_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_frequency_gen1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_frequency_gen2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_frequency_gen3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_frequency_gen4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_frequency_emrg1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_19_b.
+        sas_115_frequency_emrg2 = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_6hz_b_t
+    ////////////////////////////////////mfci_in_6hz_bis_b_t
+    ////////////////////////////////////mfci_in_sa_20_b_t
+    ////////////////////////////////////sa_20_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_emrg1_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_emrg1_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_emrg1_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_emrg2_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_emrg2_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_emrg2_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_conv1_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_conv1_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_conv1_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_conv3l_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_voltage_conv3r_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_frequency_conv1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_frequency_conv3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_converter1_voltage = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_115_converter3_voltage = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_current_battery_rap_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_current_battery_rap_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_battery_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_battery_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_current_vsu = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_l_main1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_l_main2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_l_emrg1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_r_main1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_r_main2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        sas_27_voltage_r_emrg2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        skv_temperature_pilots = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        skv_temperature_pgo = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        skv_temperature_zgo = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        skv_temperature_zto = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_20_b.
+        kisl_pressure = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_6hz_b_t
+    ////////////////////////////////////mfci_in_6hz_bis_b_t
+    ////////////////////////////////////mfci_in_sa_21_b_t
+    ////////////////////////////////////sa_21_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        bcvm_vr = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        bcvm_v2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        bcvm_landing_run_tp = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        bcvm_landing_run = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        bcvm_landing_runway_length = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        bcvm_takeoff_runway_length = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        smk_flap_right = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        smk_flap_left = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        smk_slat_right = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        smk_slat_left = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        smk_wing_left = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        smk_wing_right = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_course_balance = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_pitch_balance = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_fin = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_stab = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_interceptor_r12 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_interceptor_r34 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_interceptor_r56 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_interceptor_l12 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_interceptor_l34 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_interceptor_l56 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_flaperon_left = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_flaperon_right = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_21_b.
+        sur_roll_balance = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_6hz_b_t
+    ////////////////////////////////////mfci_in_6hz_bis_b_t
+    ////////////////////////////////////mfci_in_sa_22_b_t
+    ////////////////////////////////////sa_22_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        smk_wing = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        smk_ruk = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_lf_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_lm_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_lr_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_rf_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_rm_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_rr_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_lf_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_lm_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_lr_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_rf_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_rm_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_rr_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_acc_fluid = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_22_b.
+        torm_pressure_acc_nitro = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_6hz_b_t
+    ////////////////////////////////////mfci_in_6hz_bis_b_t
+    ////////////////////////////////////mfci_in_sa_23_b_t
+    ////////////////////////////////////sa_23_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_selected = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_centering_selected = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_centering = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_1l = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_1r = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_2l = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_2r = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_3l = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_3r = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_5 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_6 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_pressure = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_total_dz_start = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_3l_reserve = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_3r_reserve = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb1_reserve = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb2_reserve = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb3_reserve = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        topl_fuel_rb4_reserve = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        vsu_n = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        vsu_n_max_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        vsu_n_max_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_23_b.
+        vsu_tg = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_6hz_b_t
+    ////////////////////////////////////mfci_in_6hz_bis_b_t
+    ////////////////////////////////////mfci_in_sa_24_b_t
+    ////////////////////////////////////sa_24_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        vsu_tg_max_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        vsu_tg_max_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        vsu_oil_temperature = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        vsu_oil_temperature_max = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_acc_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_acc_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_acc_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_acc_4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_level_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_level_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_level_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_level_4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_temperature_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_temperature_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_temperature_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_oil_temperature_4 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_bulb_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_bulb_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_insuff_1 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_insuff_2 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_insuff_3 = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bis_b.
+        sa_24_b.
+        gs_pressure_insuff_4 = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_6hz_b_t
+    ////////////////////////////////////mfci_in_6hz_bcvm_b_t
+    ////////////////////////////////////mfci_in_fovb_b_t
+    ////////////////////////////////////fov_b
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_0_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_0_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_1_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_1_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_2_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_2_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_3_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_3_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_4_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_4_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_5_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_section_5_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_1_id_1_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_1_id_1_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_2_id_1_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_2_id_1_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_3_id_1_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_3_id_1_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_4_id_1_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_4_id_1_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_5_id_1_low = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_trail_5_id_1_high = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_speed_min = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_6hz_b.
+        bcvm_b.
+        fovb_b.
+        fovb_speed_max = 0;
+    //5
+    ////////////////////////////////////esvo_in_data_t
+    ////////////////////////////////////mfci_in_b_t
+    ////////////////////////////////////mfci_in_1hz_b_t
+    ////////////////////////////////////mfci_in_1hz_bis_b_t
+    ////////////////////////////////////mfci_in_sa_25_b_t
+    ////////////////////////////////////sa_25_b
+    ptr->mfci_in_b.
+        mfci_in_1hz_b.
+        bis_b.
+        sa_25_b.
+        mfpu2_to_mfci_msg1[MFPU_TO_MFCI_MSG1_SIZE] = 0;
+
+    ptr->mfci_in_b.
+        mfci_in_1hz_b.
+        bis_b.
+        sa_25_b.
+        mfpu3_to_mfci_msg1[MFPU_TO_MFCI_MSG1_SIZE] = 0;
 
 }
 
