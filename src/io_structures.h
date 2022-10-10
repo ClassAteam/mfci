@@ -28,8 +28,7 @@ typedef struct esvo_out_data_t
     mfci_out_sa1_b_t data8;
 } esvo_out_data_t;
 
-typedef struct esvo_buttons_data_t
-{
+typedef struct esvo_buttons_data_t {
     uint32_t counter;
     uint32_t button_id;
 } esvo_buttons_data_t;
