@@ -140,6 +140,20 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
         mfci_in_25hz_b.
         bis_b.
         sa_2_b.
+        signals_word_33_b.
+        bgs1_failure = 1;
+
+    ptr->mfci_in_b.
+        mfci_in_25hz_b.
+        bis_b.
+        sa_2_b.
+        signals_word_33_b.
+        bgs2_failure = 1;
+
+    ptr->mfci_in_b.
+        mfci_in_25hz_b.
+        bis_b.
+        sa_2_b.
         sau_director_x = 0;
 
     ptr->mfci_in_b.
@@ -4114,6 +4128,7 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
         sa_25_b.
         mfpu3_to_mfci_msg1[MFPU_TO_MFCI_MSG1_SIZE] = 0;
 
+
 }
 
 /* ptr->mfci_in_b.blocks_crc_b[CRC_SA_COUNT] = 0; */
@@ -4275,4 +4290,20 @@ void esvo_in_data_print(esvo_in_data_t* ptr) {
 
     printf("b.sa_1_b.counter: %d \n",
            ptr->mfci_in_b.mfci_in_25hz_b.bis_b.sa_1_b.counter);
+
+    printf("bgs1_failure = %d \n",
+           ptr->mfci_in_b.
+           mfci_in_25hz_b.
+           bis_b.
+           sa_2_b.
+           signals_word_33_b.
+           bgs1_failure);
+
+    printf("bgs2_failure = %d \n",
+           ptr->mfci_in_b.
+           mfci_in_25hz_b.
+           bis_b.
+           sa_2_b.
+           signals_word_33_b.
+           bgs2_failure);
 }
