@@ -4123,7 +4123,7 @@ void push_button_1(esvo_buttons_data_t* ptr) {
 }
 
 void buttons_print(esvo_buttons_data_t* ptr) {
-    printf("currently pressed button with %x id \n", ptr->button_id);
+    printf("currently pressed button has %x id \n", ptr->button_id);
 }
 
 void esvo_in_data_upd(esvo_in_data_t* ptr) {

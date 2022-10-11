@@ -15,8 +15,7 @@ typedef struct esvo_in_data_t {
     mfci_in_b_t mfci_in_b;
 } esvo_in_data_t;
 
-typedef struct esvo_out_data_t
-{
+typedef struct esvo_out_data_t {
     uint32_t counter;
     mfci_out_sa1_b_t data1;
     mfci_out_sa1_b_t data2;

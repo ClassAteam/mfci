@@ -37,12 +37,8 @@ int main()
       /* sleep(2); */
       system("clear");
 
-      /* printf("font file path is:%s", fonts); */
-
       if (upd_result != 0)
         printf("module_mfci_update failure\n");
-
-      /* push_button_1(buttons_holder1); */
 
       esvo_in_data_upd(in_holder1->data);
       esvo_in_data_print(in_holder1->data);
