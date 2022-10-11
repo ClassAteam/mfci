@@ -174,18 +174,18 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
     ////////////////////////////////////mfci_in_25hz_bis_b_t
     ////////////////////////////////////mfci_in_sa_3_b_t
     ////////////////////////////////////sa_3_b
-    ptr->mfci_in_b.
-        mfci_in_25hz_b.
-        bis_b.
-        sa_3_b.
-        absu_alpha = 0;
+    /* ptr->mfci_in_b. */
+    /*     mfci_in_25hz_b. */
+    /*     bis_b. */
+    /*     sa_3_b. */
+    /*     absu_alpha = 0; */
 
 
-    ptr->mfci_in_b.
-        mfci_in_25hz_b.
-        bis_b.
-        sa_3_b.
-        ark_bearing = 0;
+    /* ptr->mfci_in_b. */
+    /*     mfci_in_25hz_b. */
+    /*     bis_b. */
+    /*     sa_3_b. */
+    /*     ark_bearing = 0; */
 
 
     ptr->mfci_in_b.
@@ -506,17 +506,17 @@ void esvo_in_data_init(esvo_in_data_t* ptr) {
         sa_4_b.
         ans_pitch = 0;
 
-    ptr->mfci_in_b.
-        mfci_in_25hz_b.
-        bis_b.
-        sa_4_b.
-        svs_true_speed_k = 0;
+    /* ptr->mfci_in_b. */
+    /*     mfci_in_25hz_b. */
+    /*     bis_b. */
+    /*     sa_4_b. */
+    /*     svs_true_speed_k = 0; */
 
-    ptr->mfci_in_b.
-        mfci_in_25hz_b.
-        bis_b.
-        sa_4_b.
-        svs_true_speed_p = 0;
+    /* ptr->mfci_in_b. */
+    /*     mfci_in_25hz_b. */
+    /*     bis_b. */
+    /*     sa_4_b. */
+    /*     svs_true_speed_p = 0; */
 
     //5
     ////////////////////////////////////esvo_in_data_t
