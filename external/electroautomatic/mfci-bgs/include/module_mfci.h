@@ -39,6 +39,8 @@ typedef enum module_mfci_mode_t {
 typedef struct module_mfci_init_data_t {
    module_mfci_mode_t mode;       //!< Режим обмена данных
    unsigned int number;           //!< Номер МФЦИ (1…11)
+   unsigned int number_monitor;   //!< Номер монитора для вывода (нумерация с нуля)
+   unsigned char window_mode;     //!< Оконный режим (включение кнопок и декараций) ( 0 - выключено, 1 - включено)
    const char *font_filename;     //!< Путь к файлу со шрифтом МФЦИ (только для режима MODULE_MFCI_MODE_ESVO)
    const char *shm_in_data_id;    //!< Идентификатор разделяемой памяти с входными данными (только для режима MODULE_MFCI_MODE_ESVO)
    const char *shm_out_data_id;   //!< Идентификатор разделяемой памяти с выходными данными (только для режима MODULE_MFCI_MODE_ESVO)
