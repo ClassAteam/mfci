@@ -2,13 +2,6 @@
 #define IO_STRUCTURES_H_
 
 #include "mfci_io_70.h"
-#include <sys/mman.h>
-#include <fcntl.h>
-#include <semaphore.h>
-#include <sys/stat.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 typedef struct esvo_in_data_t {
     uint32_t counter;

@@ -2,6 +2,8 @@
 #include "io_structures.h"
 #include "shm_proto.h"
 #include "esvo_in_data_init.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {

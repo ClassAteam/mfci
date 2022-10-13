@@ -2,6 +2,15 @@
 #define SHM_PROTO_H_
 
 #include "io_structures.h"
+#include <fcntl.h>
+#include <semaphore.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <semaphore.h>
+#include <stdio.h>
+
 
 #define errExit(msg)    do { perror(msg); exit(EXIT_FAILURE);   \
     } while (0)

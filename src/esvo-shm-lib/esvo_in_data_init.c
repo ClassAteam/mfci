@@ -1,4 +1,5 @@
 #include "esvo_in_data_init.h"
+#include <stdio.h>
 
 void esvo_in_data_init(esvo_in_data_t* ptr) {
     ptr->counter = 0;
