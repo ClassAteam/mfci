@@ -14,6 +14,7 @@ list(APPEND _avtomatikalib
 list(APPEND mfci_exec
   mfci1
   mfci2
+  mfci3
   )
 
 foreach(_mfci IN LISTS mfci_exec)
