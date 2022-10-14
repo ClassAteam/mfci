@@ -25,7 +25,7 @@ int main()
 
     mfci1.mode = MODULE_MFCI_MODE_ESVO;
     mfci1.number = 1;
-    mfci1.number_monitor = 2;
+    mfci1.number_monitor = 0;
     mfci1.window_mode = 0;
     mfci1.font_filename = fonts;
     mfci1.shm_in_data_id = in_holder1->shm_name;
