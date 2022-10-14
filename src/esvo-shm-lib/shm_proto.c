@@ -5,10 +5,10 @@ shm_in_holder_t* shm_in_holder_new() {
 }
 
 void shm_in_holder_ctor(shm_in_holder_t* ptr, char* shm_name) {
-  shm_unlink(shm_name);
+  /* shm_unlink(shm_name); */
   ptr->shm_name = shm_name;
   ptr->fd = (int*)malloc(sizeof(int));
-  *ptr->fd = shm_open(ptr->shm_name, O_CREAT | O_EXCL | O_RDWR,
+  *ptr->fd = shm_open(ptr->shm_name, O_CREAT | O_RDWR,
                          S_IRUSR | S_IWUSR);
 
     if (*ptr->fd == -1)
@@ -32,10 +32,10 @@ shm_out_holder_t* shm_out_holder_new() {
 }
 
 void shm_out_holder_ctor(shm_out_holder_t* ptr, char* shm_name) {
-  shm_unlink(shm_name);
+  /* shm_unlink(shm_name); */
   ptr->shm_name = shm_name;
   ptr->fd = (int*)malloc(sizeof(int));
-  *ptr->fd = shm_open(ptr->shm_name, O_CREAT | O_EXCL | O_RDWR,
+  *ptr->fd = shm_open(ptr->shm_name, O_CREAT | O_RDWR,
                          S_IRUSR | S_IWUSR);
 
     if (*ptr->fd == -1)
@@ -59,10 +59,10 @@ shm_buttons_holder_t* shm_buttons_holder_new() {
 }
 
 void shm_buttons_holder_ctor(shm_buttons_holder_t* ptr, char* shm_name) {
-  shm_unlink(shm_name);
+  /* shm_unlink(shm_name); */
   ptr->shm_name = shm_name;
   ptr->fd = (int*)malloc(sizeof(int));
-  *ptr->fd = shm_open(ptr->shm_name, O_CREAT | O_EXCL | O_RDWR,
+  *ptr->fd = shm_open(ptr->shm_name, O_CREAT | O_RDWR,
                          S_IRUSR | S_IWUSR);
 
     if (*ptr->fd == -1)

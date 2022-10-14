@@ -11,10 +11,18 @@ list(APPEND _avtomatikalib
   str64
   )
 
-add_executable(test3 test3.c)
+list(APPEND mfci_exec
+  mfci1
+  mfci2
+  )
 
-target_link_libraries(test3 PRIVATE "-Wl,--disable-new-dtags" ${_avtomatikalib})
-target_link_libraries(test3 PUBLIC esvo-shm-lib)
+foreach(_mfci IN LISTS mfci_exec)
+  add_executable(${_mfci} ${_mfci}.c)
+
+  target_link_libraries(${_mfci} PRIVATE "-Wl,--disable-new-dtags" ${_avtomatikalib})
+  target_link_libraries(${_mfci} PUBLIC esvo-shm-lib)
+endforeach()
 
 add_subdirectory(tests)
 add_subdirectory(esvo-shm-lib)
+add_subdirectory(ius)
