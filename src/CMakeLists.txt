@@ -1,4 +1,3 @@
-
 list(APPEND _avtomatikalib
   sys64
   graph64
@@ -15,7 +14,6 @@ list(APPEND _avtomatikalib
 add_executable(test3 test3.c)
 
 target_link_libraries(test3 PRIVATE "-Wl,--disable-new-dtags" ${_avtomatikalib})
-# target_link_libraries(test3 PRIVATE ${_avtomatikalib})
 target_link_libraries(test3 PUBLIC esvo-shm-lib)
 
 add_subdirectory(tests)
