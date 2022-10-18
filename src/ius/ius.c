@@ -41,6 +41,7 @@ int main()
     while(1)
     {
         sleep(1);
+        system("clear");
 
         esvo_in_data_upd(in_holder1->data);
         esvo_in_data_print(in_holder1->data);
