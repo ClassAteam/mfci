@@ -2,10 +2,18 @@
 find_program(BASH_EXECUTABLE NAMES bash REQUIRED)
 
 add_test(
-  NAME mfci1_test
+  NAME three_displays
   COMMAND ${BASH_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test.sh
   $<TARGET_FILE:ius>
   $<TARGET_FILE:mfci1>
   $<TARGET_FILE:mfci2>
   $<TARGET_FILE:mfci3>
+  )
+
+add_test(
+  NAME two_displays
+  COMMAND ${BASH_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test.sh
+  $<TARGET_FILE:ius>
+  $<TARGET_FILE:mfci1>
+  $<TARGET_FILE:mfci2>
   )
