@@ -18,3 +18,5 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Sql REQUIRED)
 add_subdirectory(src)
 add_subdirectory(external)
 
+enable_testing()
+add_subdirectory(tests)
